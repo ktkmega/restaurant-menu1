@@ -11,11 +11,21 @@
             background-color: #000; /* Optional: Black background for contrast */
             display: flex;
             justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
+
         img {
-            display: block;
-            width: 100%; /* Fit the image horizontally */
+            width: 100vw; /* Take the full width of the viewport */
             height: auto; /* Maintain aspect ratio */
+        }
+
+        /* For Mobile View */
+        @media (max-width: 768px) {
+            body {
+                background-color: #000; /* Adjust background if needed */
+            }
         }
     </style>
 </head>
